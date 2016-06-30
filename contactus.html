@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="favicon.png" />
+<title>Paradise Farms</title>
+<img src="images/header.jpg">
+<div id="hmenu"> 
+<ul> 
+		<li><a href="file:///C:/Users/johnk/Desktop/kattfarms/index.html">Home</a></li>
+		<li><a href="file:///C:/Users/johnk/Desktop/kattfarms/findus.html">Find Us</a></li>
+		<li><a href="file:///C:/Users/johnk/Desktop/kattfarms/crops.html">Crops</a></li>
+        <li><a href="file:///C:/Users/johnk/Desktop/kattfarms/contactus.html">Contact us</a></li>	
+</ul>   
+</div> 
+</head>
+
+<body>
+<hr>
+<div id="page-container">Katt Paradise Farm is a family run farming enterprise. We are dedicated to educating our children about growing and preparing food, as they develop the entrepreneurial skills required to manage a small business. We grow a wide variety of vegetables and native flowers to attract beneficial birds and insects on sub-acre plots to ensure a healthy diversity of the soil. We proudly provide our customers with the fruits of their learning.
+Our produce is grown without the use of any herbicides or pesticides. The freshness of our locally grown produce maximizes its health benefits and accentuates its flavor.</div>
+<hr>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<div class="w3-display-container mySlides">
+  <img src="images/slide1.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Root Vegatables
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/slide2.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Green Beans
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/slide3.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Jersey Tomatoes 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/slide4.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Peppers
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/slide5.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    The best beets around!
+  </div>
+</div>
+
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">?</a>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">?</a>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<div id="footer">
+<div id="c1">
+<img src="images/icon.png" style="width:90px;float:left;padding-left:15px">
+</div>
+<p>Paradise Farms LLC</p>
+  <p>Contact information: <a href="mailto:paradisefarms@gmail.com">
+  paradisefarms@gmail.com</a>.</p></div>
+</body>
+
+
+</html>
