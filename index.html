@@ -1,92 +1,40 @@
 <!DOCTYPE html>
+<html>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-<html lang="en-us">
 
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="utf-8">
-<link rel="icon" type="image/png" href="favicon.png" />
-<title>Paradise Farms</title>
-<img src="images/header.jpg">
-<div id="hmenu"> 
-<ul> 
-		<li><a href="/index.html">Home</a></li>
-		<li><a href="/findus.html">Find Us</a></li>
-		<!-- <li><a href="/crops.html">Crops</a></li> -->
-     
-</ul>   
-</div> 
-</head>
-
-<body>
-<hr>
-<div id="page-container">We are a family run farming enterprise dedicated to growing and preparing healthy food. We grow a variety of vegetables and flowers on a sub-acre farm without the use of herbicides or pesticides. The freshness of our locally grown produce maximizes its health benefits and accentuates its flavor. We enjoy interacting with our customers and providing them tips and recipes, in addition to our great line up of produce, to help them in their quest to eat fresh.</div>
-<hr>
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<div class="w3-display-container mySlides">
-  <img src="images/slide1.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-    
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Username</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
 </div>
 
-<div class="w3-display-container mySlides">
-  <img src="images/slide2.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+<div class="wide">
+  	<div class="col-xs-5 line"><hr></div>
+    <div class="col-xs-2 logo">Logo</div>
+    <div class="col-xs-5 line"><hr></div>
+</div>
+
+<div class="container">
+  <div class="text-center">
+    <h1>Content</h1>
   </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="images/slide3.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="images/slide4.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="images/slide5.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-  </div>
-</div>
-
-<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
-</div>
-
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-<div id="footer">
-<div id="c1">
-<img src="images/icon.png" style="width:90px;float:left;padding-left:15px">
-</div>
-<p>Paradise Farms LLC</p>
-  <p>Contact information: <a href="mailto:paradisefarms@gmail.com">
-  paradisefarms@comcast.net</a>.</p></div>
-</body>
+</div><!-- /.container -->
 
 </html>
